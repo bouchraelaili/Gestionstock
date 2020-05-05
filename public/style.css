@@ -1,0 +1,255 @@
+
+body{
+  background-image:
+  linear-gradient(
+    to right, 
+    #833471,
+    #833471 15%,
+    white 15%,
+    white 85%,
+    #833471 85%
+  );
+  color: #485460;
+  font-family: "Bahnschrift SemiBold";
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label{
+ width: 250px;
+ font-size: 20px;
+ color: #833471;
+ 
+ 
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.input{
+  width: 350px;
+  height: 45px;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 2px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #9da6af;
+  outline: none;
+  margin: 16px;
+}
+.form-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.A{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  font-size: 15px;
+  color: white;
+  background-color: #833471;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+ 
+  h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: "Bahnschrift SemiBold";
+   padding: 0% !important;
+  
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 30%;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  /* TABLE */
+  .limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.wrap-table100 {
+  width: 1170px;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 50%;
+  margin-top: 6% ;
+  position: relative;
+}
+table * {
+  position: relative;
+ 
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 100px;
+  background:#833471;
+}
+table tbody tr {
+  height: 90px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+
+.table100-head th{
+  font-family: Bahnschrift SemiBold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: Bahnschrift SemiBold;
+  font-size: 15px;
+  color: black;
+  line-height: 1.2;
+  font-weight: unset;
+  
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.column {
+  width: 300px;
+  text-align: center;
+}
+
+.modal-header,.modal-body{
+  background-color: #35305B;
+}

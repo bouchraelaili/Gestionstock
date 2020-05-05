@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inventory management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+        
+    <h1>Fournisseurs :</h1>
+   
+
+
+        <table id="myTable" >  
+            <thead>  
+                <tr class="table100-head">  
+                    <th class="column">Id</th>  
+                    <th class="column">Nom du fournisseur</th>  
+                    <th class="column">Mail</th>  
+                    <th class="column">Tele</th>                    
+                    <th style="width: 50px;" class="column"> Action</th>  
+                    <th style="width: 80px;" class="column"></th>  
+
+
+
+                </tr>  
+            </thead>  
+             <tbody>  
+             <% fournisseurs.forEach(function (four) { %>
+                <tr>  
+                    <td class="column"><%= four.id %> </td>  
+                    <td class="column"><%= four.nomfour %></td>  
+                    <td class="column"><%= four.mail %></td>
+                    <td class="column"><%= four.tele %></td>
+                 
+                   
+                    <td><a href="/updatefourni/<%= four.id %> "class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Modifier</a>  </td>
+ <td><a href="/delete/four/<%= four.id %>" class= "btn btn-outline-warning btn-lg active" role="button" aria-pressed="true">Supprimer</a>
+                    </td>
+                </tr>
+                                                   
+             <% }) %>
+             </tbody>
+        </table>  
+        <br><br>
+        <div class="form-group">
+            <a style="margin-right: 300px;width: 150px; background-color: #833471;color: white;" type="button" href="/" class="btn btn-outline-dark">  Produit</a> 
+              <a style="margin-right: 280px; width: 170px;background-color: #833471;color: white;" type="button" href="/addfourn"  class="btn btn-outline-dark">ajouter Fournisseur</a> 
+            <a  style=" width: 150px;background-color: #833471;color: white;"type="button" href="/rayon"  class="btn btn-outline-dark">Rayon</a>
+    
+        </div>
+       
+
+
+
+
+
+        
+
+
+</body>
+
+</html>
